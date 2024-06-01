@@ -18,7 +18,7 @@ def two_point_xo(parent1, parent2):
     point2 = randint(point1, size - 1)
 
     offspring1 = parent1[:point1] + parent2[point1:point2] + parent1[point2:]
-    offspring2 = parent2[:point1] + parent1[point1:point2] + parent2[:point2:]
+    offspring2 = parent2[:point1] + parent1[point1:point2] + parent2[point2:]
 
     return offspring1, offspring2
 
