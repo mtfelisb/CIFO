@@ -114,7 +114,7 @@ class Population:
             self.individuals = new_pop
 
             if self.optim == "max":
-                print(f"Best individual of gen #{i + 1}: {max(self, key=attrgetter('fitness'))}")
+                # print(f"Best individual of gen #{i + 1}: {max(self, key=attrgetter('fitness'))}")
                 best_fitness_scores.append(max(self, key=attrgetter('fitness')))
             elif self.optim == "min":
                 print(f"Best individual of gen #{i + 1}: {min(self, key=attrgetter('fitness'))}")
