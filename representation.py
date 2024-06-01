@@ -1,7 +1,4 @@
-from data.gym_data import gyms, valid_times
-
-# a list of all gym's names
-gyms_keys = list(gyms.keys())
+from data.gym_data import gyms, valid_times, gyms_keys
 
 
 def get_genotype(gym, time):

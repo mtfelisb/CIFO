@@ -1,5 +1,3 @@
-valid_times = ['Morning', 'Afternoon', 'Evening']
-
 gyms = {
     'Fitness24': {'capacity': {'Morning': 3, 'Afternoon': 2, 'Evening': 3}},
     'Crossfit Gym': {'capacity': {'Morning': 2, 'Afternoon': 2, 'Evening': 2}},
@@ -40,3 +38,12 @@ distances = {
     'Luisa': {'Fitness24': 1.8, 'Crossfit Gym': 2.5, 'GymX': 2.3, 'StrongFit': 1.1},
     'Ricardo': {'Fitness24': 2.1, 'Crossfit Gym': 2.7, 'GymX': 1.2, 'StrongFit': 2.4}
 }
+
+# a list of all gym's names
+gyms_keys = list(gyms.keys())
+
+# a list of all possible day times
+valid_times = ['Morning', 'Afternoon', 'Evening']
+
+# a list of all users names
+users_keys = list(users.keys())
