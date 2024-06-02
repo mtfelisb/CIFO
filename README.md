@@ -7,7 +7,14 @@
 The report is available [here](https://github.com/mtfelisb/CIFO/blob/main/report/group-42.pdf).
 
 ## 🏃‍♂️ How to run 
-`python3 run.py --runs 10 --gens 10 --pop_size 10 --elitism true --save_to ./results/test.csv`
+1. Install the dependencies (there are only 3)
+```
+pip3 install -r requirements.txt
+```
+2. Run with your preferred configuration
+```
+python3 run.py --runs 10 --gens 10 --pop_size 10 --elitism true --save_to ./results/test.csv
+```
 
 
 ## 📂 Structure 
