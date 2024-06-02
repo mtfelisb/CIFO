@@ -24,7 +24,7 @@
 ```
 
 ## 🏃‍♂️ How to run 
-`python3 run.py --runs 10 --gens 10 --pop_size=10 --elitism true --save_to ./results/test.csv`
+`python3 run.py --runs 10 --gens 10 --pop_size 10 --elitism true --save_to ./results/test.csv`
 
 ## 💻 Available algorithms
 The selection, crossover, and mutation algorithms implemented either by charles or not are:
