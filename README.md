@@ -3,6 +3,13 @@
 # Computational Intelligence For Optimization
 <p>This repository is dedicated solely for study purposes. It utilizes the Charles library, which was developed during the CIFO practical classes at the NOVA Information Management School as part of the Data Science & Advanced Analytics master's program.</p>
 
+## 🖊️ Report 
+The report is available [here](https://github.com/mtfelisb/CIFO/blob/main/report/group-42.pdf).
+
+## 🏃‍♂️ How to run 
+`python3 run.py --runs 10 --gens 10 --pop_size 10 --elitism true --save_to ./results/test.csv`
+
+
 ## 📂 Structure 
 
 ```
@@ -13,6 +20,7 @@
 │   └── evaluation.ipnyb     # evalutaion from results
 ├── charles/                 # the charles library
 ├── data/                    # the dataset
+├── report/                  # contains the report in pdf format
 ├── results/                 # results for the dataset in csv
 |── fitness.py               # the fitness implementation 
 |── mutation.py              # custom mutations algorithms
@@ -22,9 +30,6 @@
 |── xo.py                    # custom xo algorithms 
 └── ...
 ```
-
-## 🏃‍♂️ How to run 
-`python3 run.py --runs 10 --gens 10 --pop_size 10 --elitism true --save_to ./results/test.csv`
 
 ## 💻 Available algorithms
 The selection, crossover, and mutation algorithms implemented either by charles or not are:
