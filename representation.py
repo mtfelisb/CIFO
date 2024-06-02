@@ -28,9 +28,43 @@ def get_phenotype(binary):
         binary: an encoded solution
 
     Returns:
-        Int, Int: gym and time
+        String, String: gym and time
     """
     gym_index = int(binary[:2], 2)
     time_index = int(binary[2:], 2)
+
+    return gyms_keys[gym_index], valid_times[time_index]
+
+
+def get_genotype_v2(gym, time):
+    """Implements the encode function.
+    It encodes the combination of gym and time as a pair of integers.
+
+    Args:
+        gym: a gym present in the dataset
+        time: a time of the day
+
+    Returns:
+        Int, Int: the combination pair
+    """
+    gym_index = gyms_keys.index(gym)
+    time_index = valid_times.index(time)
+
+    return [gym_index, time_index]
+
+
+def get_phenotype_v2(pair):
+    """Implements the decode function.
+    It decodes the pair of gym and time to int,
+    that represents the index in the data.
+
+    Args:
+        Int, Int: an encoded solution
+
+    Returns:
+        String, String: gym and time
+    """
+    gym_index = pair[0]
+    time_index = pair[1]
 
     return gyms_keys[gym_index], valid_times[time_index]
