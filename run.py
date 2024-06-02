@@ -13,6 +13,10 @@ from data.gym_data import gyms_keys, valid_times, users
 from xo import two_point_xo, uniform_xo
 from selection import ranking_sel
 from mutation import scramble_mutation
+from utils import get_args
+
+# get args for run
+args = get_args()
 
 # monkey patching
 Individual.get_fitness = get_fitness
@@ -76,10 +80,10 @@ for idx, (select, xo, mutate) in enumerate(combinations, start=1):
 
 results = pd.DataFrame()
 for solution in tqdm(range(len(solutions))):
-    results[solutions[solution]["id"]] = run(solutions[solution], 100, 100, 40, False)
+    results[solutions[solution]["id"]] = run(solutions[solution], args.runs, args.gens, args.pop_size, args.elitism)
 
 # saving the results to be further analyzed
-results.to_csv("./results/100-100-40-F.csv")
+results.to_csv(args.save_to)
 
 # saving the solutions combinations to be further explored
 pd.DataFrame(solutions).to_csv("./results/solutions.csv")

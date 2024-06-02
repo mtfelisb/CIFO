@@ -24,10 +24,7 @@
 ```
 
 ## 🏃‍♂️ How to run 
-
-1. Choose the total runs, generations, population size, and if you want to run with elitism in line #79
-2. Select a path to save the csv with the results in line #82
-3. Run with `python3 run.py`
+`python3 run.py --runs 10 --gens 10 --pop_size=10 --elitism true --save_to ./results/test.csv`
 
 ## 💻 Available algorithms
 The selection, crossover, and mutation algorithms implemented either by charles or not are:
