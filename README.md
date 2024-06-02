@@ -28,3 +28,13 @@
 1. Choose the total runs, generations, population size, and if you want to run with elitism in line #79
 2. Select a path to save the csv with the results in line #82
 3. Run with `python3 run.py`
+
+## 💻 Available algorithms
+The selection, crossover, and mutation algorithms implemented either by charles or not are:
+
+
+| Selection          | Crossover        | Mutation   |
+|--------------------|------------------|------------|
+| Ranking Selection    | Two Point Crossover       | Swap Mutation       |
+| Tournament Selection | Single Point Crossover    | Inversion Mutation  |
+| FP Selection         | Uniform Crossover         | Scramble Mutation   |
