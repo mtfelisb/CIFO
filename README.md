@@ -2,3 +2,23 @@
   
 # Computational Intelligence For Optimization
 <p>This repository is dedicated solely for study purposes. It utilizes the Charles library, which was developed during the CIFO practical classes at the NOVA Information Management School as part of the Data Science & Advanced Analytics master's program.</p>
+
+## Structure 📂
+
+```
+.
+├── ...
+├── analytics/               
+│   ├── images/              # lineplots, boxplots etc
+│   └── evaluation.ipnyb     # evalutaion from results
+├── charles/                 # the charles library
+├── data/                    # the dataset
+├── results/                 # results for the dataset in csv
+|── fitness.py               # the fitness implementation 
+|── mutation.py              # custom mutations algorithms
+|── representation.py        # encode and decode functions 
+|── run.py                   # build combinations, run, saves into results 
+|── selection.py             # custom selection algorithms 
+|── xo.py                    # custom xo algorithms 
+└── ...
+```
