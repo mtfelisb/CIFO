@@ -3,7 +3,7 @@
 # Computational Intelligence For Optimization
 <p>This repository is dedicated solely for study purposes. It utilizes the Charles library, which was developed during the CIFO practical classes at the NOVA Information Management School as part of the Data Science & Advanced Analytics master's program.</p>
 
-## Structure 📂
+## 📂 Structure 
 
 ```
 .
@@ -22,3 +22,9 @@
 |── xo.py                    # custom xo algorithms 
 └── ...
 ```
+
+## 🏃‍♂️ How to run 
+
+1. Choose the total runs, generations, population size, and if you want to run with elitism in line #79
+2. Select a path to save the csv with the results in line #82
+3. Run with `python3 run.py`
